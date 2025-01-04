@@ -1,10 +1,9 @@
-// src/pages/Client/Dashboard/index.jsx
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { collection, query, where, getDocs, orderBy, limit } from 'firebase/firestore';
 import { db } from '../../../services/firebase';
 import { useAuth } from '../../../contexts/AuthContext';
-import { useAppointments } from '../../../contexts/AppointmentContext'; // Adicione esta importação
+import { useAppointments } from '../../../contexts/AppointmentContext'; 
 import { 
   AiOutlineShoppingCart, 
   AiOutlineCalendar,
@@ -28,7 +27,7 @@ import {
 
 export const ClientDashboard = () => {
   const { user } = useAuth();
-  const { loadAppointments } = useAppointments(); // Adicione este hook
+  const { loadAppointments } = useAppointments(); 
   const [recentAppointments, setRecentAppointments] = useState([]);
   const [recentOrders, setRecentOrders] = useState([]);
   const [stats, setStats] = useState({
@@ -45,7 +44,7 @@ export const ClientDashboard = () => {
 
   const loadDashboardData = async () => {
     try {
-      // Carregar agendamentos recentes
+      
       const appointmentsRef = collection(db, 'appointments');
       const appointmentsQuery = query(
         appointmentsRef,
@@ -60,14 +59,14 @@ export const ClientDashboard = () => {
       }));
       setRecentAppointments(appointmentsData);
 
-      // Carregar todos os agendamentos para estatísticas
+      
       const allAppointmentsQuery = query(
         appointmentsRef,
         where('userId', '==', user.uid)
       );
       const allAppointmentsSnap = await getDocs(allAppointmentsQuery);
       
-      // Carregar pedidos recentes
+   
       const ordersRef = collection(db, 'orders');
       const ordersQuery = query(
         ordersRef,
@@ -82,7 +81,7 @@ export const ClientDashboard = () => {
       }));
       setRecentOrders(ordersData);
 
-      // Calcular estatísticas
+    
       const allOrdersQuery = query(
         ordersRef,
         where('userId', '==', user.uid)
@@ -97,7 +96,7 @@ export const ClientDashboard = () => {
         }
       });
 
-      // Adicionar valor dos agendamentos ao total gasto
+      
       allAppointmentsSnap.docs.forEach(doc => {
         const appointmentData = doc.data();
         if (appointmentData.servicePrice) {
@@ -127,7 +126,7 @@ export const ClientDashboard = () => {
     });
   };
 
-  // Filtrar apenas agendamentos futuros e não cancelados
+  
   const upcomingAppointments = recentAppointments.filter(appointment => {
     const appointmentDate = new Date(`${appointment.date}T${appointment.time}`);
     return appointmentDate > new Date() && appointment.status !== 'cancelled';

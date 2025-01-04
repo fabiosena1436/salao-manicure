@@ -1,5 +1,4 @@
-// src/components/Services/index.jsx
-import { MdSpa,  MdFaceUnlock } from 'react-icons/md'; // Usando Material Icons
+import { MdSpa,  MdFaceUnlock } from 'react-icons/md'; 
 import { BiWinkSmile } from "react-icons/bi";
 import {
   ServicesContainer,
@@ -11,7 +10,6 @@ import {
   ServiceDescription
 } from './styles';
 
-// src/components/Services/index.jsx
 import { useNavigate } from 'react-router-dom';
 
 export const Services = () => {

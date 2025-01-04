@@ -1,11 +1,11 @@
-// src/pages/Services/styles.js
+
 import styled from 'styled-components';
 
 export const ServicesPageContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  margin-top: 80px; // Espaço para o header fixo
+  margin-top: 80px; 
 `;
 
 export const ServicesHeader = styled.div`

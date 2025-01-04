@@ -1,4 +1,3 @@
-// src/pages/Admin/Appointments/NewAdminAppointment.jsx
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { collection, query, where, getDocs } from 'firebase/firestore';
@@ -81,8 +80,7 @@ export const NewAdminAppointment = () => {
   const [loadingClients, setLoadingClients] = useState(true);
   const [selectedClientId, setSelectedClientId] = useState(null);
 
-  // Carregar todos os clientes ao montar o componente
-  useEffect(() => {
+    useEffect(() => {
     const loadClients = async () => {
       try {
         setLoadingClients(true);
@@ -116,7 +114,6 @@ export const NewAdminAppointment = () => {
     loadClients();
   }, []);
 
-  // Filtrar clientes quando o termo de busca mudar
   useEffect(() => {
     if (searchTerm.trim() === '') {
       setFilteredClients(clients);

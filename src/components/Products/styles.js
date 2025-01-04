@@ -1,4 +1,3 @@
-// src/components/Products/styles.js
 import styled from 'styled-components';
 
 export const ProductsContainer = styled.section`

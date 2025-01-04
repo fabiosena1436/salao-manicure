@@ -36,7 +36,7 @@ export const MobileMenuButton = styled.button`
   cursor: pointer;
   padding: 0.5rem;
   margin-right: 1rem;
-  z-index: 1001; // Aumentado para ficar acima do overlay
+  z-index: 1001; 
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     display: flex;
@@ -81,7 +81,7 @@ export const NavLinks = styled.div`
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transform: translateX(${({ $isOpen }) => ($isOpen ? '0' : '-100%')});
     transition: transform 0.3s ease-in-out;
-    z-index: 1001; // Aumentado para ficar acima do overlay
+    z-index: 1001; 
 
     a {
       width: 100%;

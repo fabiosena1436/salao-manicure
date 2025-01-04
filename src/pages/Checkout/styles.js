@@ -1,4 +1,3 @@
-// src/pages/Checkout/styles.js
 import styled from 'styled-components';
 
 export const CheckoutContainer = styled.div`

@@ -1,4 +1,3 @@
-// src/pages/Auth/Register/index.jsx
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { 
@@ -56,7 +55,7 @@ export const Register = () => {
 
     try {
       await register(formData);
-      navigate('/'); // Redireciona para a home após o registro
+      navigate('/'); 
     } catch (err) {
       console.error(err);
       setError(

@@ -1,4 +1,3 @@
-// src/pages/Admin/Appointments/NewAdminAppointment.styles.js
 import styled, { keyframes } from 'styled-components';
 
 const spin = keyframes`

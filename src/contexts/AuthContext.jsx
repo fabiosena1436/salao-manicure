@@ -1,4 +1,3 @@
-// src/contexts/AuthContext.jsx
 import { createContext, useContext, useState, useEffect } from 'react';
 import { 
   createUserWithEmailAndPassword,
@@ -20,8 +19,7 @@ export const AuthProvider = ({ children }) => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
       if (firebaseUser) {
         try {
-          // Buscar dados completos do usuário no Firestore
-          const userDoc = await getDoc(doc(db, 'users', firebaseUser.uid));
+                 const userDoc = await getDoc(doc(db, 'users', firebaseUser.uid));
           if (userDoc.exists()) {
             const userData = userDoc.data();
             const enrichedUser = {
@@ -31,7 +29,7 @@ export const AuthProvider = ({ children }) => {
               phone: userData.phone,
               address: userData.address,
               role: userData.role || 'client',
-              // outros dados que você queira incluir
+              
             };
             setUser(enrichedUser);
             setUserRole(userData.role || 'client');
@@ -64,21 +62,18 @@ export const AuthProvider = ({ children }) => {
 
   const register = async (userData) => {
     try {
-      // Criar usuário no Firebase Auth
-      const { user } = await createUserWithEmailAndPassword(
+          const { user } = await createUserWithEmailAndPassword(
         auth,
         userData.email,
         userData.password
       );
 
       try {
-        // Verificar se é o primeiro usuário
-        const usersRef = collection(db, 'users');
+              const usersRef = collection(db, 'users');
         const usersSnapshot = await getDocs(usersRef);
         const isFirstUser = usersSnapshot.empty;
 
-        // Dados completos para salvar no Firestore
-        const userDataToSave = {
+               const userDataToSave = {
           name: userData.name,
           email: userData.email,
           phone: userData.phone,
@@ -87,11 +82,9 @@ export const AuthProvider = ({ children }) => {
           createdAt: new Date().toISOString()
         };
 
-        // Salvar dados adicionais no Firestore
-        await setDoc(doc(db, 'users', user.uid), userDataToSave);
+               await setDoc(doc(db, 'users', user.uid), userDataToSave);
 
-        // Retornar usuário com dados completos
-        return {
+            return {
           uid: user.uid,
           email: user.email,
           ...userDataToSave
@@ -146,8 +139,7 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  // Função para atualizar dados do usuário
-  const updateUserData = async (userData) => {
+    const updateUserData = async (userData) => {
     if (!user?.uid) throw new Error('Usuário não encontrado');
 
     try {
@@ -156,8 +148,7 @@ export const AuthProvider = ({ children }) => {
         updatedAt: new Date().toISOString()
       }, { merge: true });
 
-      // Atualizar o estado do usuário
-      setUser(prevUser => ({
+            setUser(prevUser => ({
         ...prevUser,
         ...userData
       }));
@@ -176,7 +167,7 @@ export const AuthProvider = ({ children }) => {
     login,
     logout,
     loading,
-    updateUserData // Nova função exportada
+    updateUserData 
   };
 
   return (

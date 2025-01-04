@@ -1,4 +1,3 @@
-// src/pages/Auth/ForgotPassword/styles.js
 import styled from 'styled-components';
 import {
   AuthContainer as BaseAuthContainer,

@@ -1,4 +1,3 @@
-// src/components/Cart/index.jsx
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../../contexts/CartContext';

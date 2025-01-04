@@ -1,4 +1,3 @@
-// src/pages/Client/NewAppointment/index.jsx
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { collection, addDoc, getDocs, query, where, serverTimestamp } from 'firebase/firestore';

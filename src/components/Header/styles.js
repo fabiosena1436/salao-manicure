@@ -1,4 +1,4 @@
-// src/components/Header/styles.js
+
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
@@ -18,7 +18,7 @@ export const HeaderContainer = styled.header`
 export const Logo = styled.div`
   font-size: 1.5rem;
   font-weight: bold;
-  margin-right: auto; // Empurra todo o resto para a direita
+  margin-right: auto; 
   
   a {
     color: ${({ theme }) => theme.colors.primary};

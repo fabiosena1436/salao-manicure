@@ -1,4 +1,3 @@
-// src/components/Admin/Layout/styles.js
 import styled from 'styled-components';
 
 export const AdminLayoutContainer = styled.div`

@@ -1,4 +1,3 @@
-// src/pages/Client/Dashboard/styles.js
 import styled from 'styled-components';
 
 export const DashboardContainer = styled.div`

@@ -1,4 +1,3 @@
-// src/pages/Auth/Login/index.jsx
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AiOutlineMail, AiOutlineLock } from 'react-icons/ai';

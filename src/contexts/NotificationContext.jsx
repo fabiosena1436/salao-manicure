@@ -1,4 +1,3 @@
-// src/contexts/NotificationContext.jsx
 import { createContext, useContext } from 'react';
 import { toast } from 'react-toastify';
 

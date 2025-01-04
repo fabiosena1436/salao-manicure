@@ -1,4 +1,3 @@
-// src/styles/auth/shared.js
 import styled from 'styled-components';
 
 export const AuthContainer = styled.div`

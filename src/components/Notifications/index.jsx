@@ -1,4 +1,3 @@
-// src/components/Notifications/index.jsx
 import { useState, useEffect } from 'react';
 import { AiOutlineBell } from 'react-icons/ai';
 import { useAuth } from '../../contexts/AuthContext';

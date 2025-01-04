@@ -1,4 +1,3 @@
-// src/pages/Client/Profile/styles.js
 import styled from 'styled-components';
 
 export const ProfileContainer = styled.div`

@@ -1,4 +1,3 @@
-// src/contexts/AppointmentContext.jsx
 import { createContext, useContext, useState } from 'react';
 import { db } from '../services/firebase';
 import { collection, addDoc, getDocs, query, where, orderBy, updateDoc, doc } from 'firebase/firestore';

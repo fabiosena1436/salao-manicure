@@ -1,4 +1,3 @@
-// src/components/ProductDetails/index.jsx
 import { useState } from 'react';
 import { useCart } from '../../contexts/CartContext';
 import { useNotification } from '../../contexts/NotificationContext';
@@ -77,10 +76,10 @@ export const ProductDetailsModal = ({ product, onClose }) => {
     }
   };
 
-  // Tamanhos disponíveis para lingerie
+  
   const sizes = ['P', 'M', 'G', 'GG'];
   
-  // Cores disponíveis
+
   const colors = [
     { name: 'Preto', value: '#000000' },
     { name: 'Branco', value: '#FFFFFF' },

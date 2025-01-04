@@ -1,5 +1,3 @@
-// src/pages/ServiceDetail/index.jsx
-
 import { useParams, useNavigate } from 'react-router-dom';
 import { Button } from '../../components/Button';
 import manicure1 from '../../assets/manicure1.jpg';

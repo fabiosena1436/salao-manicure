@@ -1,4 +1,3 @@
-// src/pages/Admin/Appointments/AppointmentForm.styles.js
 import styled from 'styled-components';
 
 export const FormOverlay = styled.div`

@@ -1,4 +1,3 @@
-// src/pages/Admin/Products/styles.js
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -148,7 +147,7 @@ export const ProductCard = styled.div`
 
 export const ProductImage = styled.div`
   width: 100%;
-  padding-top: 75%; // 4:3 aspect ratio
+  padding-top: 75%; 
   position: relative;
   overflow: hidden;
 

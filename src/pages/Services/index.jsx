@@ -1,4 +1,3 @@
-// src/pages/Services/index.jsx
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { MdSpa, MdFaceUnlock } from 'react-icons/md';

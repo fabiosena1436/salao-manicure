@@ -1,4 +1,3 @@
-// src/pages/Client/Appointments/index.jsx
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { collection, query, where, getDocs, updateDoc, doc } from 'firebase/firestore';
@@ -52,8 +51,7 @@ export const ClientAppointments = () => {
         ...doc.data()
       }));
       
-      // Ordenar por data e hora
-      appointmentsData.sort((a, b) => {
+         appointmentsData.sort((a, b) => {
         const dateA = new Date(`${a.date}T${a.time}`);
         const dateB = new Date(`${b.date}T${b.time}`);
         return dateA - dateB;

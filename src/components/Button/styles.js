@@ -1,4 +1,3 @@
-// src/components/Button/styles.js
 import styled, { css } from 'styled-components';
 
 export const ButtonContainer = styled.button`
@@ -8,7 +7,7 @@ export const ButtonContainer = styled.button`
   font-weight: bold;
   transition: all 0.2s;
 
-  ${({ $variant, theme }) => // Mudamos variant para $variant
+  ${({ $variant, theme }) => 
     $variant === 'primary'
       ? css`
           background: ${theme.colors.primary};

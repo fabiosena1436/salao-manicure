@@ -1,4 +1,3 @@
-// src/pages/Client/Orders/index.jsx
 import { useState, useEffect } from 'react';
 import { collection, query, where, orderBy, getDocs } from 'firebase/firestore';
 import { db } from '../../../services/firebase';

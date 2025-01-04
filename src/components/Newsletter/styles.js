@@ -1,4 +1,3 @@
-// src/components/Newsletter/styles.js
 import styled, { keyframes } from 'styled-components';
 
 const fadeIn = keyframes`

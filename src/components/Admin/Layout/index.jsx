@@ -1,4 +1,3 @@
-// src/components/Admin/Layout/index.jsx
 import { Outlet } from 'react-router-dom';
 import { Sidebar } from '../Sidebar';
 import { AdminLayoutContainer, MainContent } from './styles';

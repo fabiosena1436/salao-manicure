@@ -1,6 +1,4 @@
-// src/pages/Store/styles.js
-import styled, { css } from 'styled-components'; // Adicionando a importação do css
-
+import styled, { css } from 'styled-components';
 
 export const StoreContainer = styled.div`
   max-width: 1200px;

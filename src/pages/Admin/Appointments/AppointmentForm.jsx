@@ -1,4 +1,3 @@
-// src/pages/Admin/Appointments/AppointmentForm.jsx
 import { useState, useEffect } from 'react';
 import { collection, addDoc, doc, updateDoc, getDocs } from 'firebase/firestore';
 import { db } from '../../../services/firebase';
@@ -74,8 +73,7 @@ export const AppointmentForm = ({ appointment, onClose, onSave }) => {
       [name]: value
     }));
 
-    // Se selecionou um cliente existente, preenche o telefone
-    if (name === 'clientName') {
+       if (name === 'clientName') {
       const selectedClient = clients.find(client => client.name === value);
       if (selectedClient) {
         setFormData(prev => ({
@@ -119,7 +117,6 @@ export const AppointmentForm = ({ appointment, onClose, onSave }) => {
     }
   };
 
-  // Função para verificar se uma data é válida (não pode ser no passado)
   const isDateValid = (date) => {
     const today = new Date();
     today.setHours(0, 0, 0, 0);

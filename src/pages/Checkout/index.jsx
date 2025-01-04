@@ -1,4 +1,3 @@
-// src/pages/Checkout/index.jsx
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import { useCart } from '../../contexts/CartContext';
@@ -36,7 +35,7 @@ export const Checkout = () => {
   const { showError } = useNotification();
 
   // Número do WhatsApp do vendedor (substitua pelo número real)
-  const WHATSAPP_NUMBER = "5518997434894";
+  const WHATSAPP_NUMBER = "";
 
   if (!user) {
     navigate('/login');

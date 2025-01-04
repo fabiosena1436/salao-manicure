@@ -1,4 +1,3 @@
-// src/components/Notifications/styles.js
 import styled from 'styled-components';
 
 export const NotificationsContainer = styled.div`

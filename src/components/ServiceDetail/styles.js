@@ -1,4 +1,3 @@
-// src/pages/ServiceDetail/styles.js
 import styled from 'styled-components';
 
 export const ServiceDetailContainer = styled.div`

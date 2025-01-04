@@ -1,5 +1,4 @@
-// src/pages/Auth/Login/styles.js
-import styled from 'styled-components'; // Adicione esta importação
+import styled from 'styled-components'; 
 import {
   AuthContainer,
   AuthBox,

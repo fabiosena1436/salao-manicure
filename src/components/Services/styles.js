@@ -1,4 +1,3 @@
-// src/components/Services/styles.js
 import styled from 'styled-components';
 
 export const ServicesContainer = styled.section`

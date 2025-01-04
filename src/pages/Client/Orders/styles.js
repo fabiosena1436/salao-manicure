@@ -1,4 +1,3 @@
-// src/pages/Client/Orders/styles.js
 import styled from 'styled-components';
 
 export const OrdersContainer = styled.div`

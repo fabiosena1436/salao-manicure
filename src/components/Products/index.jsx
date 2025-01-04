@@ -32,7 +32,7 @@ export const Products = () => {
   const loadProducts = async () => {
     try {
       const productsRef = collection(db, 'products');
-      // Usando limit(4) para mostrar apenas 4 produtos em destaque
+     
       const q = query(productsRef, limit(4));
       const querySnapshot = await getDocs(q);
       
@@ -50,7 +50,7 @@ export const Products = () => {
   };
 
   const handleAddToCart = (product, e) => {
-    e.stopPropagation(); // Previne a abertura do modal
+    e.stopPropagation(); 
     addToCart(product);
     showSuccess('Produto adicionado ao carrinho!');
   };

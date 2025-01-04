@@ -75,13 +75,13 @@ export const Footer = () => {
         <FooterSection>
           <FooterTitle>Redes Sociais</FooterTitle>
           <SocialLinks>
-            <SocialIcon href="https://www.facebook.com/paty.senna.56?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+            <SocialIcon href="" target="_blank" rel="noopener noreferrer">
               <AiFillFacebook size={24} />
             </SocialIcon>
-            <SocialIcon href="https://www.instagram.com/patisenna_?igsh=MXY4d2NnMno1dWV1Zg==" target="_blank" rel="noopener noreferrer">
+            <SocialIcon href="" target="_blank" rel="noopener noreferrer">
               <AiFillInstagram size={24} />
             </SocialIcon>
-            <SocialIcon href="https://api.whatsapp.com/send?phone=5518981881194&text= Olá Pati! Gostaria de saber mais sobre seu trabalho." target="_blank" rel="noopener noreferrer">
+            <SocialIcon href="">
               <AiOutlineWhatsApp size={24} />
             </SocialIcon>
           </SocialLinks>
