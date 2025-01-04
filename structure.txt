@@ -1,0 +1,137 @@
+salaon-lingerie-patti
+├── LICENSE
+├── README.md
+├── eslint.config.js
+├── index.html
+├── package.json
+├── public
+├── src
+│   ├── App.jsx
+│   ├── assets
+│   │   ├── banner-lang.png
+│   │   ├── depilaçoa1.jpg
+│   │   ├── depilaçoa2.jpg
+│   │   ├── depilaçoa3.jpg
+│   │   ├── manicure1.jpg
+│   │   ├── manicure2.jpg
+│   │   ├── manicure3.jpg
+│   │   ├── sombrancelhas1.jpg
+│   │   ├── sombrancelhas2.jpg
+│   │   └── sombrancelhas3.jpg
+│   ├── components
+│   │   ├── Admin
+│   │   │   ├── Layout
+│   │   │   │   ├── index.jsx
+│   │   │   │   └── styles.js
+│   │   │   └── Sidebar
+│   │   │       ├── index.jsx
+│   │   │       └── styles.js
+│   │   ├── Banner
+│   │   │   ├── index.jsx
+│   │   │   └── styles.js
+│   │   ├── Button
+│   │   │   ├── index.jsx
+│   │   │   └── styles.js
+│   │   ├── Cart
+│   │   │   ├── index.jsx
+│   │   │   └── styles.js
+│   │   ├── Client
+│   │   │   └── Layout
+│   │   │       ├── index.jsx
+│   │   │       └── styles.js
+│   │   ├── Footer
+│   │   │   ├── index.jsx
+│   │   │   └── styles.js
+│   │   ├── Header
+│   │   │   ├── index.jsx
+│   │   │   └── styles.js
+│   │   ├── Layout
+│   │   │   ├── index.jsx
+│   │   │   └── styles.js
+│   │   ├── Newsletter
+│   │   │   ├── index.jsx
+│   │   │   └── styles.js
+│   │   ├── Notifications
+│   │   │   ├── index.jsx
+│   │   │   └── styles.js
+│   │   ├── ProductDetails
+│   │   │   ├── index.jsx
+│   │   │   └── styles.js
+│   │   ├── Products
+│   │   │   ├── index.jsx
+│   │   │   └── styles.js
+│   │   ├── ServiceDetail
+│   │   │   ├── index.jsx
+│   │   │   └── styles.js
+│   │   └── Services
+│   │       ├── index.jsx
+│   │       └── styles.js
+│   ├── contexts
+│   │   ├── AuthContext.jsx
+│   │   ├── CartContext.jsx
+│   │   └── NotificationContext.jsx
+│   ├── hooks
+│   ├── main.jsx
+│   ├── pages
+│   │   ├── Admin
+│   │   │   ├── Appointments
+│   │   │   │   ├── AppointmentForm.jsx
+│   │   │   │   ├── AppointmentForm.styles.js
+│   │   │   │   ├── index.jsx
+│   │   │   │   └── styles.js
+│   │   │   ├── Dashboard
+│   │   │   │   ├── index.jsx
+│   │   │   │   └── styles.js
+│   │   │   └── Products
+│   │   │       ├── ProductForm.jsx
+│   │   │       ├── ProductForm.styles.js
+│   │   │       ├── index.jsx
+│   │   │       └── styles.js
+│   │   ├── Auth
+│   │   │   ├── ForgotPassword
+│   │   │   │   ├── index.jsx
+│   │   │   │   └── styles.js
+│   │   │   ├── Login
+│   │   │   │   ├── index.jsx
+│   │   │   │   └── styles.js
+│   │   │   └── Register
+│   │   │       ├── index.jsx
+│   │   │       └── styles.js
+│   │   ├── Checkout
+│   │   │   ├── index.jsx
+│   │   │   └── styles.js
+│   │   ├── Client
+│   │   │   ├── Appointments
+│   │   │   │   ├── index.jsx
+│   │   │   │   └── styles.js
+│   │   │   ├── Dashboard
+│   │   │   │   ├── index.jsx
+│   │   │   │   └── styles.js
+│   │   │   ├── NewAppointment
+│   │   │   │   ├── index.jsx
+│   │   │   │   └── styles.js
+│   │   │   ├── Orders
+│   │   │   │   ├── index.jsx
+│   │   │   │   └── styles.js
+│   │   │   └── Profile
+│   │   │       ├── index.jsx
+│   │   │       └── styles.js
+│   │   ├── Home
+│   │   │   ├── index.jsx
+│   │   │   └── styles.js
+│   │   └── Store
+│   │       ├── index.jsx
+│   │       └── styles.js
+│   ├── routes.jsx
+│   ├── services
+│   │   ├── firebase.js
+│   │   └── notifications.js
+│   ├── styles
+│   │   ├── auth
+│   │   │   └── shared.js
+│   │   ├── global.js
+│   │   └── theme.js
+│   └── utils
+├── structure.txt
+├── vite.config.js
+└── yarn.lock
